@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: e-shop-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: e-shop 
+  template:
+    metadata:
+      labels:
+        app: e-shop
+    spec:
+      containers:
+        - name: e-shop
+          image: elmostaine/e-shop_dev
+          env:
+            - name: NODE_ENV
+              value: 'PROD'
+      imagePullSecrets:
+        - name: regcred
+        
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: e-shop-srv
+spec:
+  selector:
+    app: e-shop
+  ports:
+    - name: e-shop
+      protocol: TCP
+      port: 5000
+      targetPort: 5000

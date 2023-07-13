@@ -1,0 +1,27 @@
+{
+  "ts-node-dev": {
+    "transpileOnly": true,
+    "typeCheck": false,
+    "files": false,
+
+  },
+  "ts-node": {
+    "transpileOnly": true,
+    "typeCheck": false,
+    "files": false,
+
+  },
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+  },  
+  "include": [
+    "./**/*.ts",
+  ],
+  "exclude": ["node_modules"]
+}
