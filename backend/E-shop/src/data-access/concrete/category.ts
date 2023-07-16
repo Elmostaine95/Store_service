@@ -11,7 +11,7 @@ export class categoryRepository {
         return await category.create(folderData);
     }
 
-    public Update = async (id: string, folderData: any) => {
+    public update = async (id: string, folderData: any) => {
         return await category.update(folderData, {
             where: {
                 id: id

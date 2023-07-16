@@ -11,7 +11,7 @@ export class addressRepository {
         return await address.create(folderData);
     }
 
-    public Update = async (id: string, folderData: any) => {
+    public update = async (id: string, folderData: any) => {
         return await address.update(folderData, {
             where: {
                 id: id

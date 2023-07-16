@@ -11,7 +11,7 @@ export class wichlist_itemRepository {
         return await wichlist_item.create(folderData);
     }
 
-    public Update = async (id: string, folderData: any) => {
+    public update = async (id: string, folderData: any) => {
         return await wichlist_item.update(folderData, {
             where: {
                 id: id

@@ -11,7 +11,7 @@ export class item_photo_videoRepository {
         return await item_photo_video.create(folderData);
     }
 
-    public Update = async (id: string, folderData: any) => {
+    public update = async (id: string, folderData: any) => {
         return await item_photo_video.update(folderData, {
             where: {
                 id: id

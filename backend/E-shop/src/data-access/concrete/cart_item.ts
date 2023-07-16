@@ -11,7 +11,7 @@ export class cart_itemRepository {
         return await cart_item.create(folderData);
     }
 
-    public Update = async (id: string, folderData: any) => {
+    public update = async (id: string, folderData: any) => {
         return await cart_item.update(folderData, {
             where: {
                 id: id

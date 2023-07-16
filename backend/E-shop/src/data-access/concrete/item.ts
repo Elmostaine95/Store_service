@@ -11,7 +11,7 @@ export class itemRepository {
         return await item.create(folderData);
     }
 
-    public Update = async (id: string, folderData: any) => {
+    public update = async (id: string, folderData: any) => {
         return await item.update(folderData, {
             where: {
                 id: id
