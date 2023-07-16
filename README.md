@@ -1,4 +1,4 @@
-# ![Node/Express/PostgreSQL Store App](/backend/Store_service/repo/project-logo.webp/project-logo.webp)
+# Node/Express/PostgreSQL Store App
 
 
 > ### The Backend project empowers users to create and manage their own stores, while also providing administrators with tools for oversight and user story management within the web application. It streamlines store creation, product management, and order processing.
