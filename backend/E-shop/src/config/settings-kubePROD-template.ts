@@ -1,7 +1,7 @@
 export default {
     environment: "prod",
     app: {
-        module: "e-shop",
+        module: "store_service",
         host: "http://localhost:3000",
         backendPort: 1234,
     },
@@ -45,7 +45,7 @@ export default {
                 },
             },
             bucketName: "replace-with-your-bucket-name",
-            uploadPath: "uploads/private/modules/e-shop-module/"
+            uploadPath: "uploads/private/modules/store_service-module/"
         },
     },
     secrets: {

@@ -1,13 +1,13 @@
 export default {
     environment: "kubedev",
     app: {
-        module: "e-shop",
+        module: "store_service",
         host: "https://prod.io",
         backendPort: 5000,
     },
     database: {
         host: "private-db-postgresql-nyc1-96371-do-user-13342913-0.b.db.ondigitalocean.com",
-        database: "E-shop_DEV",
+        database: "store_service_DEV",
         port: 25061,
         username: "doadmin",
         password: "AVNS_2qrldO7BlaWliI-zsYj",
@@ -45,7 +45,7 @@ export default {
                 },
             },
             bucketName: "example-dev",
-            uploadPath: "uploads/private/modules/e-shop-module/"
+            uploadPath: "uploads/private/modules/store_service-module/"
         },
     },
     secrets: {
