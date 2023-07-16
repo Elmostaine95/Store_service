@@ -14,11 +14,11 @@ spec:
     - host: localhost:3001
       http:
         paths:
-          - path: /api/e-shop/?(.*)
+          - path: /api/store_service/?(.*)
             pathType: Prefix
             backend:
               service:
-                name: e-shop-srv
+                name: store_service-srv
                 port:
                   number: 5000
           - path: /?(.*)

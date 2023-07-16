@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: e-shop-depl
+  name: store_service-depl
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: e-shop 
+      app: store_service 
   template:
     metadata:
       labels:
-        app: e-shop
+        app: store_service
     spec:
       containers:
-        - name: e-shop
-          image: elmostaine/e-shop_dev
+        - name: store_service
+          image: elmostaine/store_service_dev
           env:
             - name: NODE_ENV
               value: 'PROD'
@@ -25,12 +25,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: e-shop-srv
+  name: store_service-srv
 spec:
   selector:
-    app: e-shop
+    app: store_service
   ports:
-    - name: e-shop
+    - name: store_service
       protocol: TCP
       port: 5000
       targetPort: 5000
