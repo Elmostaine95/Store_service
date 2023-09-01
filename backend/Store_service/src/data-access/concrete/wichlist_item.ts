@@ -7,12 +7,12 @@ export class wichlist_itemRepository {
 
     }
 
-    public create = async (folderData: any) => {
-        return await wichlist_item.create(folderData);
+    public create = async (wichlist_itemData: any) => {
+        return await wichlist_item.create(wichlist_itemData);
     }
 
-    public update = async (id: string, folderData: any) => {
-        return await wichlist_item.update(folderData, {
+    public update = async (id: string, wichlist_itemData: any) => {
+        return await wichlist_item.update(wichlist_itemData, {
             where: {
                 id: id
             }

@@ -7,12 +7,12 @@ export class cart_itemRepository {
 
     }
 
-    public create = async (folderData: any) => {
-        return await cart_item.create(folderData);
+    public create = async (cart_itemData: any) => {
+        return await cart_item.create(cart_itemData);
     }
 
-    public update = async (id: string, folderData: any) => {
-        return await cart_item.update(folderData, {
+    public update = async (id: string, cart_itemData: any) => {
+        return await cart_item.update(cart_itemData, {
             where: {
                 id: id
             }

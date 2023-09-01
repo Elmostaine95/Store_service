@@ -7,12 +7,12 @@ export class category_itemRepository {
 
     }
 
-    public create = async (folderData: any) => {
-        return await category_item.create(folderData);
+    public create = async (cart_item: any) => {
+        return await category_item.create(cart_item);
     }
 
-    public update = async (id: string, folderData: any) => {
-        return await category_item.update(folderData, {
+    public update = async (id: string, cart_item: any) => {
+        return await category_item.update(cart_item, {
             where: {
                 id: id
             }

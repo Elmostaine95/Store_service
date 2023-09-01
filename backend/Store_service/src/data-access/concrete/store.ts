@@ -7,12 +7,12 @@ export class storeRepository {
 
     }
 
-    public create = async (folderData: any) => {
-        return await store.create(folderData);
+    public create = async (storeData: any) => {
+        return await store.create(storeData);
     }
 
-    public update = async (id: string, folderData: any) => {
-        return await store.update(folderData, {
+    public update = async (id: string, storeData: any) => {
+        return await store.update(storeData, {
             where: {
                 id: id
             }

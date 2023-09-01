@@ -7,12 +7,12 @@ export class order_itemRepository {
 
     }
 
-    public create = async (folderData: any) => {
-        return await order_item.create(folderData);
+    public create = async (order_itemData: any) => {
+        return await order_item.create(order_itemData);
     }
 
-    public update = async (id: string, folderData: any) => {
-        return await order_item.update(folderData, {
+    public update = async (id: string, order_itemData: any) => {
+        return await order_item.update(order_itemData, {
             where: {
                 id: id
             }

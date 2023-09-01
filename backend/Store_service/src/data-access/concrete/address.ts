@@ -7,12 +7,12 @@ export class addressRepository {
 
     }
 
-    public create = async (folderData: any) => {
-        return await address.create(folderData);
+    public create = async (addressData: any) => {
+        return await address.create(addressData);
     }
 
-    public update = async (id: string, folderData: any) => {
-        return await address.update(folderData, {
+    public update = async (id: string, addressData: any) => {
+        return await address.update(addressData, {
             where: {
                 id: id
             }

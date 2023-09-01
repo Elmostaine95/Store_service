@@ -7,12 +7,12 @@ export class item_photo_videoRepository {
 
     }
 
-    public create = async (folderData: any) => {
-        return await item_photo_video.create(folderData);
+    public create = async (item_photo_videoData: any) => {
+        return await item_photo_video.create(item_photo_videoData);
     }
 
-    public update = async (id: string, folderData: any) => {
-        return await item_photo_video.update(folderData, {
+    public update = async (id: string, item_photo_videoData: any) => {
+        return await item_photo_video.update(item_photo_videoData, {
             where: {
                 id: id
             }
